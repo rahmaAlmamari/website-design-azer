@@ -1,0 +1,90 @@
+header {
+  height: 590px;
+  background: black;
+  width: 1263px;
+}
+
+header {
+  background-image: url("/asset/image/volunteer.jpg");
+  background-size: cover;
+  position: relative;
+  height: 590px;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); 
+}
+
+.header-content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+/* Animation for the samp elements */
+.header-content samp {
+  opacity: 0; /* Start with opacity 0 to hide the samp elements */
+  animation: fadeIn 4s forwards; /* Apply the fade-in animation */
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    opacity: 1; /* End with opacity 1 */
+  }
+}
+
+.colo-pur {
+  color: #c77dff;
+}
+
+.colo-wit {
+  color: white;
+}
+
+.button {
+  background-color: #c77dff;
+  border-radius: 40%;
+  color: white;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  transform: scale(0);
+  animation: scaleIn 1.5s forwards 0.5s;
+}
+
+/* Keyframes for the scale-in animation */
+@keyframes scaleIn {
+  from {
+    transform: scale(0); /* Start with scale 0 */
+  }
+  to {
+    transform: scale(1); /* End with scale 1 */
+  }
+}
+
+.button:hover {
+  background-color: transparent;
+  border: 2px solid white;
+}

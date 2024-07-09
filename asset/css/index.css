@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
+@import "/asset/css/header.css";
+@import "/asset/css/nav.css";
+@import "/asset/css/footer.css";
+@import "/asset/css/aboutus.css";
+@import"/asset/css/services.css";
+@import"/asset/css/contact.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo', sana-serif;
+}
+
+.grid-container {
+  width: 100%;
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: black;
+}

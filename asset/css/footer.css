@@ -1,0 +1,96 @@
+footer {
+  height: 400px;
+  background: black;
+  padding: 20px;
+}
+hr {
+  border: none; /* Remove the default border */
+  border-top: 1px solid gray; /* Set the color and width of the line */
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 30px;
+}
+
+.footer-content > div:nth-child(1) {
+  grid-column: span 1;
+  height: 300px;
+  top: 55%;
+  left: 50%;
+  text-align: right;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  padding-right: 30px;
+}
+
+.f-contact img{
+  width: 17px;
+  height: 17px;
+}
+.contact-group samp{
+  color: gray;
+  font-weight: 100;
+  font-size: 15px;
+  display: inline-block; 
+}
+.contact-group a img{
+  width: 35px;
+  height: 35px;
+  margin-top: 25px;
+}
+.footer-content > div:nth-child(2) {
+  grid-column: span 1;
+  height: 300px;
+  top: 55%;
+  left: 50%;
+  text-align: right;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  padding-right: 50px;
+}
+
+.f-links span{
+  color: gray;
+  padding-top: 0;
+  margin-left: 5px; 
+}
+.f-links a{
+  color: gray;
+  font-weight: 100;
+  font-size: 15px;
+  padding-right: 10px;
+  display: inline-block; 
+}
+
+.footer-content > div:nth-child(3) {
+  grid-column: span 1;
+  height: 300px;
+  top: 55%;
+  left: 50%;
+  text-align: right;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  padding-right: 30px;
+}
+
+.f-about p{
+  text-align: right;
+  font-size: 15px;
+  color: gray;
+  font-weight:100;
+  margin-top: 20px;
+}
+.footer-content > div:nth-child(4) {
+  grid-column: span 3;
+  top: 55%;
+  left: 50%;
+  text-align: center;
+  font-size: 15px;
+  color: gray;
+  margin-top: 40px;
+}

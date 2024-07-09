@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Chunk Five";
+  src: url("/path/to/ChunkFive-Regular.ttf") format("truetype");
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent; /* Set background to transparent */
+  position: fixed; /* Fixed position to keep it always visible */
+  width: 100%;
+  padding: 10px;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.logo {
+  font-family: "Chunk Five", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  width: 40px;
+  border-radius: 25px;
+  padding-left: 30px;
+  padding-bottom: 5px;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  margin-right: 80px;
+  color: white;
+}
+
+.nav-links li {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* Style the links */
+.nav-links li a {
+  position: relative; /* Position relative for pseudo-element */
+}
+
+/* Pseudo-element for the yellow line */
+.nav-links li a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Adjust this value to control the thickness of the line */
+  left: 50%; /* Start from the middle */
+  width: 0; /* Initially no width */
+  height: 8%; /* Adjust this value to control the thickness of the line */
+  background-color: #c77dff;
+  transition: width 0.4s ease; /* Transition for width */
+}
+
+/* Expand the yellow line on hover */
+.nav-links li a:hover::before {
+  width: calc(
+    100% - 12px
+  ); /* Expand to both sides, adjust padding-left and padding-right values if needed */
+  left: 8px; /* Adjust this value to control the starting point */
+}
+
+/* Hide the button by default */
+.hidden {
+  display: none;
+}
+
+/* Show the button on small screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide nav links on small screens */
+  }
+
+  .hidden {
+    display: block; /* Show the button */
+  }
+}
