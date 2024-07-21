@@ -41,7 +41,7 @@
   }
 }
 .info {
-  background-image: url("/asset/image/image5.jpg");
+  background-image: url("../image/image5.jpg");
   background-size: cover;
   border-radius: 0px 24px 24px 0px;
   -moz-border-radius: 0px 24px 24px 0px;

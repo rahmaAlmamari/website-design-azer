@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
-@import "/asset/css/header.css";
-@import "/asset/css/nav.css";
-@import "/asset/css/footer.css";
-@import "/asset/css/aboutus.css";
-@import"/asset/css/services.css";
-@import"/asset/css/contact.css";
+@import "./header.css";
+@import "./nav.css";
+@import "./footer.css";
+@import "./aboutus.css";
+@import"./services.css";
+@import"./contact.css";
 
 * {
   margin: 0;

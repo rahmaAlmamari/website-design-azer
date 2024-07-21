@@ -5,7 +5,7 @@ header {
 }
 
 header {
-  background-image: url("/asset/image/volunteer.jpg");
+  background-image: url("../image/volunteer.jpg");
   background-size: cover;
   position: relative;
   height: 590px;
